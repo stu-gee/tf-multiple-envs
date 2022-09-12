@@ -19,3 +19,9 @@ resource "google_compute_instance" "default" {
   }
 
 }
+
+module "server" {
+  source = "github.com/org/repo//modules/compute-instance?ref=v1.0.0"
+
+
+}
