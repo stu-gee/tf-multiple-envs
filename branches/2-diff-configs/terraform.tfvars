@@ -1,2 +1,2 @@
-instance_name = "dev"
-machine_type = "e2-small"
+instance_name = "stage"
+machine_type = "e2-medium"

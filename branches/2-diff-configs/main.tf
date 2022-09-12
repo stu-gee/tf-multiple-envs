@@ -19,3 +19,13 @@ resource "google_compute_instance" "default" {
   }
 
 }
+
+## Calling a specific version of your module
+module "server" {
+  source = "github.com/org/repo//modules/compute-instance?ref=v2.0.0"
+
+  ###
+  ###  ... some parameters
+  ###
+
+}
