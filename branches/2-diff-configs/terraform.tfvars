@@ -1,2 +1,2 @@
-instance_name = "value"
-machine_type = "value"
+instance_name = "dev"
+machine_type = "e2-small"

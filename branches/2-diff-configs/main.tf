@@ -6,7 +6,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
   name         = "instance-${var.instance_name}"
   machine_type = var.machine_type
-  zone         = local.zones[terraform.workspace]
+  zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
