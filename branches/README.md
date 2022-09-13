@@ -23,3 +23,16 @@ git push
 ```bash
 git checkout -b stage
 ```
+
+4. Navigating between environments is definitely better than using `workspaces`, especially if you're using GitHub to navigate.
+
+## Using different config/backend/modules with branches
+
+1. This is where using `branches` is one step above `workspaces`. You can setup separate values either through changing the resource parameters manually, or adding a variable definition file (terraform.tfvars). Can also have separate backends, and use separate module versions.
+
+```bash
+git checkout dev-config
+
+git checkout stage-config
+
+```
