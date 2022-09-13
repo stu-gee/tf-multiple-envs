@@ -1,4 +1,4 @@
-# Setting up environments using 
+# Setting up environments using branches
 
 Code in `main.tf` shows setting up a single GCE instance.
 
