@@ -27,3 +27,18 @@ terragrunt apply
 ## Using different modules
 
 1. Nothing too fancy here. Inside our `terragrunt.hcl` file we just add the appropriate source.
+
+## Using multiple modules
+
+1. Terragrunt works with only a single module at a time, so they've added a solution to make this easier.
+
+2. Can still use `terraform_remote_state` but they've added `dependency blocks` to make things a lot easier
+
+3. Can also deploy multiple modules at once
+
+```
+# Ensure you're in the root `live` directory
+
+terragrunt run-all apply
+
+```
