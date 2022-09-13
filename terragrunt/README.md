@@ -21,3 +21,9 @@ terragrunt apply
 1. Terragrunt offers a way to configure the backend for all your Terraform modules in a standardized, centralized way, that all minimizes code duplication.
 
 2. A `terragrunt.hcl` file exists at the root of our `live` directory which uses regex and locals to grab the environment name and dynamically create a backend bucket for our Terraform state file.
+
+3. Inside our original `terragrunt.hcl` files that exist in each child/environment directory we add some code to include the parent configuration with the proper values updated for uniqueness.
+
+## Using different modules
+
+1. Nothing too fancy here. Inside our `terragrunt.hcl` file we just add the appropriate source.
