@@ -2,7 +2,7 @@
 
 Code in `main.tf` shows setting up a single GCE instance.
 
-1. Imagine you want to deploy this to `dev`, `stage`, or `prod`. To do this using workspaces you first create a branch called `dev`
+1. Imagine you want to deploy this to `dev`, `stage`, or `prod`. To do this using branches you first create a branch called `dev`
 
 ```bash
 git checkout -b dev
