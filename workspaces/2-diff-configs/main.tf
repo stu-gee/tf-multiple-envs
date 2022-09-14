@@ -13,7 +13,7 @@ provider "google" {
 
 resource "google_compute_instance" "default" {
   name         = "instance-${terraform.workspace}"
-  # Good for only two options
+  # Conditional expression, good for only two options
   machine_type = terraform.workspace == "prod" ? "e2-medium" : "e2-small"
   # Use maps for greater control
   zone         = local.zones[terraform.workspace]
